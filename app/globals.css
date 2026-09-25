@@ -56,3 +56,16 @@
 @utility hero_tag {
   @apply text-center xl:text-6xl md:text-5xl sm:text-4xl text-3xl font-generalsans font-black !leading-normal;
 }
+
+/* button component */
+@utility btn {
+  @apply flex gap-3 items-center justify-center cursor-pointer p-3 rounded-full bg-black-500  transition-all active:scale-95 text-white-700  mx-auto;
+}
+
+@utility btn-ping {
+  @apply animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75;
+}
+
+@utility btn-ping_dot {
+  @apply relative inline-flex rounded-full h-3 w-3 bg-red-500;
+}
