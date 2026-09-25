@@ -69,3 +69,7 @@
 @utility btn-ping_dot {
   @apply relative inline-flex rounded-full h-3 w-3 bg-red-500;
 }
+
+@utility sample-container {
+  @apply grid lg:grid-cols-2 grid-cols-1 gap-10 mt-10;
+}
