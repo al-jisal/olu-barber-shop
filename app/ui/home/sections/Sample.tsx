@@ -15,23 +15,21 @@ const Sample = () => {
                 <div className="flex flex-col gap-5 relative sm:p-10 py-10 px-5 shadow-2xl shadow-black-200">
                     <DepthCarousel
                         items={items}
-                        depth={220}
-                        spread={90}
-                        tilt={22}
+                        // depth={220}
+                        // spread={90}
+                        // tilt={22}
                         tiltDirection="right"
                         perspective={1400}
                         visibleCards={4}
                         falloff={0.2}
                         blur={6}
-                        autoplay={false}
                         loop
                         cardWidth={700}
-                        cardHeight={780}
+                        cardHeight={700}
                         radius={18}
                         tint="#05060a"
                         duration={700}
                         ease="power3.out"
-                        autoplayDelay={3200}
                         showControls
                         showIndicators
                     />
