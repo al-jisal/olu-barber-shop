@@ -62,20 +62,12 @@ interface DragState {
     id: number;
 }
 
-const DEFAULT_ITEMS: DepthCarouselItem[] = [
-    { image: 'https://picsum.photos/seed/depth1/800/1000', alt: 'Slide 1' },
-    { image: 'https://picsum.photos/seed/depth2/800/1000', alt: 'Slide 2' },
-    { image: 'https://picsum.photos/seed/depth3/800/1000', alt: 'Slide 3' },
-    { image: 'https://picsum.photos/seed/depth4/800/1000', alt: 'Slide 4' },
-    { image: 'https://picsum.photos/seed/depth5/800/1000', alt: 'Slide 5' },
-    { image: 'https://picsum.photos/seed/depth6/800/1000', alt: 'Slide 6' }
-];
 
 const clamp = (v: number, min: number, max: number) => Math.min(Math.max(v, min), max);
 const normalizeItem = (it: DepthCarouselItem) => (typeof it === 'string' ? { image: it, alt: '' } : it);
 
 const DepthCarousel = ({
-    items = DEFAULT_ITEMS,
+    items,
     cardWidth = 700,
     cardHeight = 650,
     radius = 18,
