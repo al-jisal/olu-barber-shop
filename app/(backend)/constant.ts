@@ -20,3 +20,26 @@ export const navLinks = [
     href: '#contact',
   },
 ];
+
+export const services = [
+  {
+    id: 1,
+    title: "Name of haircut",
+    price: "$10"
+  },
+  {
+    id: 2,
+    title: "Name of haircut",
+    price: "$10"
+  },
+  {
+    id: 3,
+    title: "Name of haircut",
+    price: "$10"
+  },
+  {
+    id: 4,
+    title: "Name of haircut",
+    price: "$10"
+  }
+]
